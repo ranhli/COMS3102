@@ -14,7 +14,9 @@ const App = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("http://localhost:8888/products");
+      const response = await axios.get(
+        "https://hollow-giant-cent.glitch.me/products"
+      );
       setProducts(response.data);
     } catch (error) {
       console.error("Error fetching products:", error);
@@ -23,7 +25,7 @@ const App = () => {
 
   const handleAddProduct = async () => {
     try {
-      await axios.post("http://localhost:8888/products", {
+      await axios.post("https://hollow-giant-cent.glitch.me/products", {
         name,
         price,
         description,
@@ -41,7 +43,7 @@ const App = () => {
 
   const handleDeleteProduct = async (id) => {
     try {
-      await axios.delete(`http://localhost:8888/products/${id}`);
+      await axios.delete(`https://hollow-giant-cent.glitch.me/products/${id}`);
       fetchProducts();
     } catch (error) {
       console.error("Error deleting product:", error);
