@@ -8,7 +8,7 @@ touch backend/.env
 
 Add your `MONGO_DB_URI` to this file
 
-## Install Dependencies
+## Install dependencies
 
 ```
 cd backend
@@ -17,14 +17,14 @@ cd ../frontend
 npm install
 ```
 
-## Start Backend
+## Start backend
 
 ```
 cd backend
 npm start
 ```
 
-## Start Frontend
+## Start frontend
 
 ```
 cd frontend
